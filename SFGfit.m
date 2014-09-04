@@ -229,7 +229,7 @@ function push_startFit_Callback(hObject, eventdata, handles)
 axes(handles.axes_status);
 imshow('icons\busy.gif')
 % Start Log
-if get(handles.check_logFile) == 1
+if get(handles.check_logFile,'Value') == 1
     fcn_logFile(1)
 end
 % Start Fitting
@@ -241,7 +241,7 @@ else
     fitData = fcn_batchFit(handles);
 end
 % End Log
-if get(handles.check_logFile) == 1
+if get(handles.check_logFile,'Value') == 1
     fcn_logFile(0)
 end
 % Send fitData to workspace

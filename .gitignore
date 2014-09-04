@@ -43,3 +43,5 @@ slprj/
 # Data files
 *.dat
 *.csv
+# Log files
+*.log

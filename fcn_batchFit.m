@@ -104,7 +104,7 @@ fitDataTable = cell2table(fitDataCell,...
     'RowNames',dataNames);
 
 %% Save table
-if get(handles.check_dataTable) == 1
+if get(handles.check_dataTable,'Value') == 1
     tablePath = 'results\';
     tableName1 = 'FitData_';
     filename2 = fcn_gendatename();

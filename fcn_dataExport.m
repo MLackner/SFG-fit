@@ -6,7 +6,7 @@ filename = options.name;
 filetype = '.csv';
 
 %% Make dir if doesn't exist
-folderCheck = exist(filepath,'dir');
+folderCheck = exist(pathname,'dir');
 if folderCheck ~= 7
     makedir(filepath)
 end
