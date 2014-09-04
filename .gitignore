@@ -39,9 +39,20 @@ $RECYCLE.BIN/
 # Simulink Code Generation
 slprj/
 
+### Folders ###
+##-------------------------------
+## Ignore the following folders
+##-------------------------------
+result tables/
+settings/
+# dont ignore default settings
+!default.mat
+
+
 ### Other ###
 # Data files
 *.dat
 *.csv
+
 # Log files
 *.log
