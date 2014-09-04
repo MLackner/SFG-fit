@@ -68,6 +68,17 @@ imshow('icons\ready.gif')
 % Play random animation in plot window
 fcn_rndPlot(handles);
 
+% Insert default settings
+Settings = load('settings\default.mat');
+fldnames = fieldnames(Settings);
+Data = Settings.(fldnames{1});
+% Insert Peak Positions
+peakPos = Data{1};
+set(handles.edit_peakPos,'String',peakPos)
+% Insert Damping Coefficients
+dampC = Data{2};
+set(handles.edit_dampCoeff,'String',dampC)
+
 
 % --- Outputs from this function are returned to the command line.
 function varargout = SFGfit_OutputFcn(hObject, eventdata, handles) 

@@ -45,8 +45,6 @@ slprj/
 ##-------------------------------
 result tables/
 settings/
-# dont ignore default settings
-!default.mat
 
 
 ### Other ###
