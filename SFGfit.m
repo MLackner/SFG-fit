@@ -22,7 +22,7 @@ function varargout = SFGfit(varargin)
 
 % Edit the above text to modify the response to help SFGfit
 
-% Last Modified by GUIDE v2.5 03-Sep-2014 17:03:53
+% Last Modified by GUIDE v2.5 04-Sep-2014 18:35:26
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -375,3 +375,13 @@ function check_runOptim_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Hint: get(hObject,'Value') returns toggle state of check_runOptim
+
+
+% --- Executes on button press in push_showResults.
+function push_showResults_Callback(hObject, eventdata, handles)
+% hObject    handle to push_showResults (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Show fit results in Fit Info panel
+fcn_showResults(handles)

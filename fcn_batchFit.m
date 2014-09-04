@@ -15,7 +15,7 @@ if get(handles.check_runOptim,'Value') == 1
     % Get the data
     h = handles.figure1;
     options.G = getappdata(h,'meanValsG');
-    options.w = getappdata(h,'meanValsw')
+    options.w = getappdata(h,'meanValsw');
     
     % If there are no mean values available get the entered guesses
     if isempty(options.w) == 1 || isempty(options.G) == 1
