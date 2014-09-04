@@ -1,7 +1,7 @@
 function fcn_dataExport(xData,yData,fitresult,options)
     
 %% Options
-pathname = 'Export Data\';
+pathname = 'export data\';
 filename = options.name;
 filetype = '.csv';
 

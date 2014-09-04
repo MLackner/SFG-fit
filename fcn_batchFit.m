@@ -105,7 +105,7 @@ fitDataTable = cell2table(fitDataCell,...
 
 %% Save table
 if get(handles.check_dataTable,'Value') == 1
-    tablePath = 'results\';
+    tablePath = 'result tables\';
     tableName1 = 'FitData_';
     filename2 = fcn_gendatename();
     tableType = '.mat';

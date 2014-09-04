@@ -13,7 +13,7 @@ if onoff == 1
     % Generate second part of filename
     filename2 = fcn_gendatename();
     % Set filetype
-    filetype = '.txt';
+    filetype = '.log';
     % Complete filename
     filename = [filepath,filename1,'_',filename2,filetype];
     
