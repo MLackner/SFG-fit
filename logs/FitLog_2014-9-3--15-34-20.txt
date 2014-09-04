@@ -1,0 +1,142 @@
+LOGFILE 
+03-Sep-2014 15:34:20 
+____________________________
+Peak positions set to:
+        2853        2879        2910        2946        2968
+Bounds: 10
+Damping coefficients set to:
+  Columns 1 through 4
+          9.5          5.6         10.5          7.5
+  Column 5
+            8
+Bounds: 5
+
+_________________________________
+Fit Results for ----beier7Eppp0----
+
+cName =
+A01
+cVal =
+-3.8209
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*G01)+A02/(w02-x-1i*G02)+A03/(w03-x-1i*G03)+A04/(w04-x-1i*G04)+A05/(w05-x-1i*G05)).^2
+cName =
+A02
+cVal =
+-7.2407
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*G01)+-7.2407/(w02-x-1i*G02)+A03/(w03-x-1i*G03)+A04/(w04-x-1i*G04)+A05/(w05-x-1i*G05)).^2
+cName =
+A03
+cVal =
+24.3761
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*G01)+-7.2407/(w02-x-1i*G02)+24.3761/(w03-x-1i*G03)+A04/(w04-x-1i*G04)+A05/(w05-x-1i*G05)).^2
+cName =
+A04
+cVal =
+-15.4527
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*G01)+-7.2407/(w02-x-1i*G02)+24.3761/(w03-x-1i*G03)+-15.4527/(w04-x-1i*G04)+A05/(w05-x-1i*G05)).^2
+cName =
+A05
+cVal =
+98.8442
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*G01)+-7.2407/(w02-x-1i*G02)+24.3761/(w03-x-1i*G03)+-15.4527/(w04-x-1i*G04)+98.8442/(w05-x-1i*G05)).^2
+cName =
+G01
+cVal =
+6.8608
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*G02)+24.3761/(w03-x-1i*G03)+-15.4527/(w04-x-1i*G04)+98.8442/(w05-x-1i*G05)).^2
+cName =
+G02
+cVal =
+3.8749
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*G03)+-15.4527/(w04-x-1i*G04)+98.8442/(w05-x-1i*G05)).^2
+cName =
+G03
+cVal =
+11.8978
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*G04)+98.8442/(w05-x-1i*G05)).^2
+cName =
+G04
+cVal =
+12.5
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*G05)).^2
+cName =
+G05
+cVal =
+6.6609
+output =
+abs(m*x+b+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+b
+cVal =
+8.7222
+output =
+a8.7222s(m*x+8.7222+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+m
+cVal =
+-0.0021857
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(w01-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+w01
+cVal =
+2861.9279
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(2861.9279-x-1i*6.8608)+-7.2407/(w02-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+w02
+cVal =
+2876.6703
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(2861.9279-x-1i*6.8608)+-7.2407/(2876.6703-x-1i*3.8749)+24.3761/(w03-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+w03
+cVal =
+2912.7667
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(2861.9279-x-1i*6.8608)+-7.2407/(2876.6703-x-1i*3.8749)+24.3761/(2912.7667-x-1i*11.8978)+-15.4527/(w04-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+w04
+cVal =
+2948.7677
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(2861.9279-x-1i*6.8608)+-7.2407/(2876.6703-x-1i*3.8749)+24.3761/(2912.7667-x-1i*11.8978)+-15.4527/(2948.7677-x-1i*12.5)+98.8442/(w05-x-1i*6.6609)).^2
+cName =
+w05
+cVal =
+2968.9856
+output =
+a8.7222s(-0.0021857*x+8.7222+-3.8209/(2861.9279-x-1i*6.8608)+-7.2407/(2876.6703-x-1i*3.8749)+24.3761/(2912.7667-x-1i*11.8978)+-15.4527/(2948.7677-x-1i*12.5)+98.8442/(2968.9856-x-1i*6.6609)).^2
+fhandle = 
+    @(x)eval(output)
+{Error using <a href="matlab:helpUtils.errorDocCallback('dataExport>@(x)eval(output)', 'E:\Git\SFG-fit\dataExport.m', 23)" style="font-weight:bold">dataExport>@(x)eval(output)</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\dataExport.m',23,0)">line 23</a>)
+Error: Unexpected MATLAB expression.
+Error in <a href="matlab:helpUtils.errorDocCallback('dataExport', 'E:\Git\SFG-fit\dataExport.m', 24)" style="font-weight:bold">dataExport</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\dataExport.m',24,0)">line 24</a>)
+fitData = fhandle(xData)
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_createFit', 'E:\Git\SFG-fit\fcn_createFit.m', 123)" style="font-weight:bold">fcn_createFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_createFit.m',123,0)">line 123</a>)
+dataExport(xData,yData,fitresult,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_batchFit', 'E:\Git\SFG-fit\fcn_batchFit.m', 52)" style="font-weight:bold">fcn_batchFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_batchFit.m',52,0)">line 52</a>)
+    [fitresult, gof, output] =
+    fcn_createFit(dataSet.(fldName),handles,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_startFit_Callback', 'E:\Git\SFG-fit\SFGfit.m', 221)" style="font-weight:bold">SFGfit>push_startFit_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',221,0)">line 221</a>)
+    fitData = fcn_batchFit(handles);
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_startFit_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_startFit_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating uicontrol Callback
+
+helpUtils.errorDocCallback('dataExport>@(x)eval(output)', 'E:\Git\SFG-fit\dataExport.m', 23)

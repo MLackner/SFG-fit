@@ -1,0 +1,42 @@
+LOGFILE 
+03-Sep-2014 15:37:43 
+____________________________
+Peak positions set to:
+        2853        2879        2910        2946        2968
+Bounds: 10
+Damping coefficients set to:
+  Columns 1 through 4
+          9.5          5.6         10.5          7.5
+  Column 5
+            8
+Bounds: 5
+{Error using <a href="matlab:helpUtils.errorDocCallback('fittype/testCustomModelEvaluation', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\testCustomModelEvaluation.m', 12)" style="font-weight:bold">fittype/testCustomModelEvaluation</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\testCustomModelEvaluation.m',12,0)">line 12</a>)
+Expression abs(m*x+c is not a valid MATLAB expression, has
+non-scalar coefficients, or cannot be evaluated:
+Error in fittype expression ==> abs(m.*x+c
+??? Error: Expression or statement is incorrect--possibly
+unbalanced (, {, or [.
+Error in <a href="matlab:helpUtils.errorDocCallback('fittype>iCreateFittype', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\fittype.m', 371)" style="font-weight:bold">fittype>iCreateFittype</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\fittype.m',371,0)">line 371</a>)
+    testCustomModelEvaluation( obj );
+Error in <a href="matlab:helpUtils.errorDocCallback('fittype', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\fittype.m', 328)" style="font-weight:bold">fittype</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\fittype.m',328,0)">line 328</a>)
+                obj = iCreateFittype( obj, varargin{:} );
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_batchFit', 'E:\Git\SFG-fit\fcn_batchFit.m', 40)" style="font-weight:bold">fcn_batchFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_batchFit.m',40,0)">line 40</a>)
+options.ft = fittype(fitModel,'independent', 'x', 'dependent',
+'y' );
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_startFit_Callback', 'E:\Git\SFG-fit\SFGfit.m', 221)" style="font-weight:bold">SFGfit>push_startFit_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',221,0)">line 221</a>)
+    fitData = fcn_batchFit(handles);
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_startFit_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_startFit_Callback',hObject,eventdata,guidata(hObject))</a>
+
+
+Caused by:
+    Error using <a href="matlab:helpUtils.errorDocCallback('fittype/evaluate', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\evaluate.m', 102)" style="font-weight:bold">fittype/evaluate</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\@fittype\evaluate.m',102,0)">line 102</a>)
+    Error in fittype expression ==> abs(m.*x+c
+    ??? Error: Expression or statement is incorrect--possibly
+    unbalanced (, {, or [.} 
+Error while evaluating uicontrol Callback
+

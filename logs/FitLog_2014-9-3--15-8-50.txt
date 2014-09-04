@@ -1,0 +1,31 @@
+LOGFILE 
+03-Sep-2014 15:08:50 
+____________________________
+Peak positions set to:
+        2853        2879        2910        2946        2968
+Bounds: 10
+Damping coefficients set to:
+          9.5          5.6         10.5          7.5            8
+Bounds: 5
+
+_________________________________
+Fit Results for ----beier7Eppp0----
+
+{Undefined function or variable 'fitresults'.
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_createFit', 'E:\Git\SFG-fit\fcn_createFit.m', 123)" style="font-weight:bold">fcn_createFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_createFit.m',123,0)">line 123</a>)
+dataExport(xData,yData,fitresults,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_batchFit', 'E:\Git\SFG-fit\fcn_batchFit.m', 52)" style="font-weight:bold">fcn_batchFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_batchFit.m',52,0)">line 52</a>)
+    [fitresult, gof, output] =
+    fcn_createFit(dataSet.(fldName),handles,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_startFit_Callback', 'E:\Git\SFG-fit\SFGfit.m', 221)" style="font-weight:bold">SFGfit>push_startFit_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',221,0)">line 221</a>)
+    fitData = fcn_batchFit(handles);
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_startFit_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_startFit_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating uicontrol Callback
+

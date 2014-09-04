@@ -1,0 +1,55 @@
+LOGFILE 
+03-Sep-2014 15:09:52 
+____________________________
+Peak positions set to:
+        2853        2879        2910        2946        2968
+Bounds: 10
+Damping coefficients set to:
+          9.5          5.6         10.5          7.5            8
+Bounds: 5
+
+_________________________________
+Fit Results for ----beier7Eppp0----
+
+ans =
+abs(m*x+b+A01/(w01-x-1i*G01)+A02/(w02-x-1i*G02)+A03/(w03-x-1i*G03)+A04/(w04-x-1i*G04)+A05/(w05-x-1i*G05)).^2
+{Undefined function 'coeffs' for input arguments of type 'cfit'.
+Error in <a href="matlab:helpUtils.errorDocCallback('dataExport', 'E:\Git\SFG-fit\dataExport.m', 14)" style="font-weight:bold">dataExport</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\dataExport.m',14,0)">line 14</a>)
+coeffs(fitresult)
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_createFit', 'E:\Git\SFG-fit\fcn_createFit.m', 123)" style="font-weight:bold">fcn_createFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_createFit.m',123,0)">line 123</a>)
+dataExport(xData,yData,fitresult,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_batchFit', 'E:\Git\SFG-fit\fcn_batchFit.m', 52)" style="font-weight:bold">fcn_batchFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_batchFit.m',52,0)">line 52</a>)
+    [fitresult, gof, output] =
+    fcn_createFit(dataSet.(fldName),handles,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_startFit_Callback', 'E:\Git\SFG-fit\SFGfit.m', 221)" style="font-weight:bold">SFGfit>push_startFit_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',221,0)">line 221</a>)
+    fitData = fcn_batchFit(handles);
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_startFit_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_startFit_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating uicontrol Callback
+
+help coeffs
+<strong>coeffs</strong> - Coefficients for filters
+
+    This MATLAB function returns a structure containing the coefficients of the
+    adaptive filter ha.
+
+    s = <strong>coeffs</strong>(ha)
+    s = <strong>coeffs</strong>(hd)
+    s = <strong>coeffs</strong>(hm)
+    s = <strong>coeffs</strong>(hs)
+    s = <strong>coeffs</strong>(hs,Name,Value)
+
+    <a href="matlab:doc coeffs">Reference page for coeffs</a>
+
+    See also <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/adaptfilt.html">adaptfilt</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/freqz.html">freqz</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/grpdelay.html">grpdelay</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/impz.html">impz</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/info.html">info</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/phasez.html">phasez</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/stepz.html">stepz</a>, <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/zerophase.html">zerophase</a>, 
+        <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/dsp/ref/zplane.html">zplane</a>
+
+    Other functions named coeffs
+        <a href="file:///D:/Program%20Files/MATLAB/R2014a/help/symbolic/coeffs.html">symbolic/coeffs</a>
+

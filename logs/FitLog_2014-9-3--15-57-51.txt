@@ -1,0 +1,1471 @@
+LOGFILE 
+03-Sep-2014 15:57:51 
+____________________________
+Peak positions set to:
+        2853        2879        2910        2946        2968
+Bounds: 5
+Damping coefficients set to:
+  Columns 1 through 4
+          9.5          5.6         10.5          7.5
+  Column 5
+            8
+Bounds: 1
+
+_________________________________
+Fit Results for ----beier5Appp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -1.841  (-7.479, 3.796)
+       A02 =      -11.28  (-16.72, -5.849)
+       A03 =        16.2  (6.966, 25.44)
+       A04 =      -19.51  (-24.09, -14.93)
+       A05 =       109.9  (108.7, 111.1)
+       G01 =         8.5  (fixed at bound)
+       G02 =         4.6  (2.233, 6.967)
+       G03 =       9.639  (4.154, 15.12)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       9.321  (-0.5736, 19.22)
+       m =   -0.002363  (-0.005795, 0.001069)
+       w01 =        2858  (fixed at bound)
+       w02 =        2877  (2876, 2879)
+       w03 =        2911  (2908, 2914)
+       w04 =        2950  (2948, 2951)
+       w05 =        2970  (2969, 2970)
+gof = 
+           sse: 1840.1
+       rsquare: 0.99454
+           dfe: 112
+    adjrsquare: 0.99395
+          rmse: 4.0534
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 2
+    firstorderopt: 68.432
+       iterations: 1221
+        funcCount: 27504
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped because c...'
+
+_________________________________
+Fit Results for ----beier5Appp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -2.677  (-7.101, 1.748)
+       A02 =      -6.033  (-8.256, -3.809)
+       A03 =       13.57  (8.974, 18.16)
+       A04 =      -9.851  (-13.39, -6.313)
+       A05 =       81.83  (79.58, 84.07)
+       G01 =        10.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (6.773, 7.227)
+       c =       13.08  (5.184, 20.97)
+       m =   -0.003852  (-0.006581, -0.001124)
+       w01 =        2848  (fixed at bound)
+       w02 =        2877  (2875, 2879)
+       w03 =        2912  (2908, 2915)
+       w04 =        2951  (fixed at bound)
+       w05 =        2968  (2968, 2969)
+gof = 
+           sse: 471.68
+       rsquare: 0.9951
+           dfe: 89
+    adjrsquare: 0.99455
+          rmse: 2.3021
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 0
+    firstorderopt: 501.08
+       iterations: 1633
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Fitting stopped because the number ...'
+
+_________________________________
+Fit Results for ----beier5Assp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       24.48  (13.19, 35.77)
+       A02 =       137.7  (132.8, 142.6)
+       A03 =       38.62  (31.3, 45.93)
+       A04 =       119.5  (116.9, 122)
+       A05 =       15.45  (7.394, 23.5)
+       G01 =       9.546  (5.521, 13.57)
+       G02 =        6.54  (6.296, 6.784)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       2.206  (1.967, 2.445)
+       m =  -2.223e-14  (fixed at bound)
+       w01 =        2857  (2855, 2858)
+       w02 =        2881  (2881, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2941  (fixed at bound)
+       w05 =        2973  (fixed at bound)
+gof = 
+           sse: 7708.5
+       rsquare: 0.99285
+           dfe: 90
+    adjrsquare: 0.99214
+          rmse: 9.2547
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 2
+    firstorderopt: 0.0041077
+       iterations: 174
+        funcCount: 3924
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Bppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       2.174  (-4.28, 8.628)
+       A02 =      -13.88  (-16.84, -10.91)
+       A03 =       27.54  (21.57, 33.51)
+       A04 =      -11.36  (-16.16, -6.564)
+       A05 =       117.5  (116.5, 118.6)
+       G01 =        10.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       12.16  (1.684, 22.64)
+       m =    -0.00334  (-0.006963, 0.0002822)
+       w01 =        2848  (fixed at bound)
+       w02 =        2877  (2875, 2878)
+       w03 =        2909  (2907, 2912)
+       w04 =        2949  (2947, 2952)
+       w05 =        2968  (2967, 2968)
+gof = 
+           sse: 1731.9
+       rsquare: 0.99577
+           dfe: 89
+    adjrsquare: 0.99529
+          rmse: 4.4113
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.00015141
+       iterations: 247
+        funcCount: 5004
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Bppp130----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      0.5122  (-3.422, 4.446)
+       A02 =       3.285  (1.429, 5.141)
+       A03 =       17.87  (14.34, 21.4)
+       A04 =        -1.4  (-3.833, 1.034)
+       A05 =       63.46  (62.72, 64.2)
+       G01 =        10.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         6.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       4.446  (-2.573, 11.46)
+       m =  -0.0009676  (-0.003396, 0.001461)
+       w01 =        2848  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2911  (2909, 2914)
+       w04 =        2951  (fixed at bound)
+       w05 =        2968  (2967, 2968)
+gof = 
+           sse: 276.97
+       rsquare: 0.9918
+           dfe: 91
+    adjrsquare: 0.99108
+          rmse: 1.7446
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 2
+    firstorderopt: 0.00010845
+       iterations: 166
+        funcCount: 3276
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Bppp130_2----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       1.742  (-0.8823, 4.366)
+       A02 =       1.789  (0.3457, 3.233)
+       A03 =       14.92  (12.37, 17.47)
+       A04 =      -5.252  (-8.064, -2.44)
+       A05 =       63.87  (63.19, 64.54)
+       G01 =        10.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       1.732  (1.633, 1.831)
+       m =   -2.23e-14  (fixed at bound)
+       w01 =        2848  (fixed at bound)
+       w02 =        2883  (2878, 2888)
+       w03 =        2910  (2907, 2912)
+       w04 =        2951  (fixed at bound)
+       w05 =        2969  (2969, 2969)
+gof = 
+           sse: 212.82
+       rsquare: 0.99285
+           dfe: 91
+    adjrsquare: 0.99222
+          rmse: 1.5293
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 2
+    firstorderopt: 0.0004119
+       iterations: 141
+        funcCount: 2934
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Bssp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       11.28  (6.056, 16.5)
+       A02 =       146.9  (145.1, 148.8)
+       A03 =       19.81  (8.716, 30.91)
+       A04 =       129.9  (127.3, 132.5)
+       A05 =       12.68  (3.496, 21.87)
+       G01 =         8.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       2.417  (2.12, 2.715)
+       m =  -2.221e-14  (fixed at bound)
+       w01 =        2856  (2853, 2860)
+       w02 =        2881  (2881, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2942  (2942, 2943)
+       w05 =        2965  (2959, 2971)
+gof = 
+           sse: 8043.4
+       rsquare: 0.99412
+           dfe: 90
+    adjrsquare: 0.99353
+          rmse: 9.4537
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.0003245
+       iterations: 364
+        funcCount: 7524
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Bssp130----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =          33  (27.43, 38.58)
+       A02 =       89.67  (88.1, 91.25)
+       A03 =       25.18  (18.44, 31.92)
+       A04 =       98.33  (96.25, 100.4)
+       A05 =       2.601  (-7.389, 12.59)
+       G01 =        10.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       4.277  (-7.415, 15.97)
+       m =  -0.0007924  (-0.004859, 0.003274)
+       w01 =        2856  (2855, 2857)
+       w02 =        2881  (2881, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2942  (2941, 2942)
+       w05 =        2973  (fixed at bound)
+gof = 
+           sse: 2943.3
+       rsquare: 0.98535
+           dfe: 90
+    adjrsquare: 0.98388
+          rmse: 5.7187
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.00070114
+       iterations: 321
+        funcCount: 6750
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Cppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -4.492  (-9.087, 0.102)
+       A02 =      -14.04  (-18.77, -9.318)
+       A03 =       21.38  (11.55, 31.21)
+       A04 =      -12.68  (-16.7, -8.649)
+       A05 =       111.4  (110.5, 112.4)
+       G01 =         8.5  (fixed at bound)
+       G02 =       4.741  (3.113, 6.37)
+       G03 =       11.09  (6.597, 15.59)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       15.58  (4.188, 26.98)
+       m =   -0.004487  (-0.008423, -0.0005509)
+       w01 =        2858  (fixed at bound)
+       w02 =        2877  (2876, 2878)
+       w03 =        2912  (2909, 2914)
+       w04 =        2951  (fixed at bound)
+       w05 =        2969  (2969, 2969)
+gof = 
+           sse: 1079.7
+       rsquare: 0.99638
+           dfe: 88
+    adjrsquare: 0.99592
+          rmse: 3.5028
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 0
+    firstorderopt: 0.37226
+       iterations: 1463
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Fitting stopped because the number ...'
+
+_________________________________
+Fit Results for ----beier5Cppp130----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -6.504  (-10.38, -2.63)
+       A02 =      -5.815  (-7.844, -3.785)
+       A03 =       18.72  (14.63, 22.8)
+       A04 =      -5.976  (-9.461, -2.49)
+       A05 =       87.41  (86.64, 88.19)
+       G01 =        10.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       21.99  (15.07, 28.92)
+       m =    -0.00681  (-0.009209, -0.004412)
+       w01 =        2854  (2847, 2861)
+       w02 =        2876  (2874, 2878)
+       w03 =        2912  (2909, 2914)
+       w04 =        2951  (fixed at bound)
+       w05 =        2968  (2967, 2968)
+gof = 
+           sse: 562.89
+       rsquare: 0.99528
+           dfe: 89
+    adjrsquare: 0.99475
+          rmse: 2.5149
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 2
+    firstorderopt: 0.0052612
+       iterations: 150
+        funcCount: 3024
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier5Cssp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       16.71  (6.111, 27.3)
+       A02 =       162.7  (158.5, 166.9)
+       A03 =      -51.27  (-58.54, -44)
+       A04 =       139.4  (136.3, 142.5)
+       A05 =       22.95  (16.74, 29.16)
+       G01 =       9.393  (4.291, 14.5)
+       G02 =         6.6  (6.425, 6.774)
+       G03 =         9.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       3.359  (3.134, 3.584)
+       m =  -2.337e-14  (fixed at bound)
+       w01 =        2857  (2855, 2859)
+       w02 =        2881  (2881, 2881)
+       w03 =        2911  (2907, 2914)
+       w04 =        2944  (2944, 2945)
+       w05 =        2963  (fixed at bound)
+gof = 
+           sse: 5786.1
+       rsquare: 0.99657
+           dfe: 88
+    adjrsquare: 0.99614
+          rmse: 8.1087
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 0
+    firstorderopt: 9.772
+       iterations: 1665
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Fitting stopped because the number ...'
+
+_________________________________
+Fit Results for ----beier5Cssp130----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       23.88  (18.52, 29.24)
+       A02 =       136.5  (131.5, 141.5)
+       A03 =      -54.19  (-64.42, -43.96)
+       A04 =       123.6  (119.3, 128)
+       A05 =       27.57  (20.51, 34.63)
+       G01 =         8.5  (fixed at bound)
+       G02 =       6.537  (6.28, 6.793)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       3.251  (2.979, 3.522)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2857  (2856, 2859)
+       w02 =        2880  (2880, 2881)
+       w03 =        2911  (2905, 2916)
+       w04 =        2946  (2946, 2947)
+       w05 =        2963  (fixed at bound)
+gof = 
+           sse: 7772.2
+       rsquare: 0.99158
+           dfe: 89
+    adjrsquare: 0.99063
+          rmse: 9.3449
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.00088943
+       iterations: 181
+        funcCount: 4014
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier6Appp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -4.819  (-13.66, 4.026)
+       A02 =      -4.976  (-7.799, -2.153)
+       A03 =       19.57  (14.82, 24.32)
+       A04 =      -16.04  (-19.88, -12.21)
+       A05 =       93.91  (92.84, 94.99)
+       G01 =       8.961  (-8.687, 26.61)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       9.629  (0.08408, 19.17)
+       m =   -0.002516  (-0.00582, 0.0007885)
+       w01 =        2858  (2849, 2867)
+       w02 =        2875  (2872, 2878)
+       w03 =        2912  (2909, 2914)
+       w04 =        2951  (fixed at bound)
+       w05 =        2969  (2969, 2969)
+gof = 
+           sse: 745.2
+       rsquare: 0.99446
+           dfe: 88
+    adjrsquare: 0.99377
+          rmse: 2.91
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.0001612
+       iterations: 599
+        funcCount: 11484
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier6Appp133----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =     -0.9591  (-4.874, 2.955)
+       A02 =      0.9356  (-3.102, 4.973)
+       A03 =       18.85  (14.44, 23.25)
+       A04 =      -4.117  (-11.03, 2.801)
+       A05 =       73.89  (72.57, 75.22)
+       G01 =         8.5  (fixed at bound)
+       G02 =         4.6  (-16.08, 25.28)
+       G03 =        11.5  (fixed at bound)
+       G04 =       7.241  (-1.773, 16.26)
+       G05 =           7  (fixed at bound)
+       c =        10.2  (0.9454, 19.46)
+       m =   -0.002737  (-0.005935, 0.0004598)
+       w01 =        2854  (2823, 2884)
+       w02 =        2884  (fixed at bound)
+       w03 =        2914  (2911, 2916)
+       w04 =        2951  (fixed at bound)
+       w05 =        2968  (2968, 2969)
+gof = 
+           sse: 517.96
+       rsquare: 0.99098
+           dfe: 88
+    adjrsquare: 0.98985
+          rmse: 2.4261
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.48386
+       iterations: 185
+        funcCount: 3708
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier6Assp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       33.22  (26.6, 39.83)
+       A02 =       135.2  (131.6, 138.7)
+       A03 =      -44.29  (-55.48, -33.09)
+       A04 =       141.5  (133.5, 149.4)
+       A05 =      -18.23  (-30.64, -5.827)
+       G01 =         8.5  (fixed at bound)
+       G02 =       4.977  (4.812, 5.141)
+       G03 =         9.5  (fixed at bound)
+       G04 =       8.156  (7.456, 8.856)
+       G05 =           7  (fixed at bound)
+       c =       19.04  (-1.585, 39.66)
+       m =   -0.006111  (-0.0133, 0.001073)
+       w01 =        2855  (2853, 2857)
+       w02 =        2880  (2880, 2880)
+       w03 =        2912  (2885, 2938)
+       w04 =        2945  (2944, 2946)
+       w05 =        2972  (2968, 2976)
+gof = 
+           sse: 9727.7
+       rsquare: 0.99503
+           dfe: 86
+    adjrsquare: 0.99427
+          rmse: 10.635
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 0.057715
+       iterations: 284
+        funcCount: 5598
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier6Assp133----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       30.58  (19.9, 41.26)
+       A02 =       91.73  (87.7, 95.75)
+       A03 =       35.31  (29.64, 40.98)
+       A04 =       86.67  (84.11, 89.24)
+       A05 =       3.932  (-4.594, 12.46)
+       G01 =       9.079  (6.394, 11.76)
+       G02 =       6.348  (6.048, 6.649)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       1.386  (1.093, 1.678)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2857  (2856, 2858)
+       w02 =        2881  (2881, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2942  (2941, 2943)
+       w05 =        2973  (fixed at bound)
+gof = 
+           sse: 2807.1
+       rsquare: 0.98836
+           dfe: 89
+    adjrsquare: 0.98705
+          rmse: 5.6161
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 2
+    firstorderopt: 0.0010635
+       iterations: 169
+        funcCount: 3978
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Bppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       19.93  (11.76, 28.1)
+       A02 =       24.35  (19.58, 29.12)
+       A03 =       72.86  (66.68, 79.03)
+       A04 =       43.51  (38.57, 48.45)
+       A05 =       106.1  (101.9, 110.2)
+       G01 =        10.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       49.32  (42.03, 56.62)
+       m =    -0.01644  (-0.01897, -0.01392)
+       w01 =        2858  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2911  (2909, 2913)
+       w04 =        2941  (fixed at bound)
+       w05 =        2964  (2963, 2964)
+gof = 
+           sse: 13322
+       rsquare: 0.90033
+           dfe: 141
+    adjrsquare: 0.89468
+          rmse: 9.7203
+output = 
+           numobs: 150
+         numparam: 17
+        residuals: [150x1 double]
+         Jacobian: [150x17 double]
+         exitflag: 2
+    firstorderopt: 0.028219
+       iterations: 303
+        funcCount: 6066
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Bppp116----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       1.169  (-4.237, 6.575)
+       A02 =       2.544  (0.9172, 4.17)
+       A03 =        21.7  (18.4, 25)
+       A04 =      -3.977  (-7.49, -0.4636)
+       A05 =       60.06  (59, 61.11)
+       G01 =       8.588  (-31.82, 48.99)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       12.42  (6.52, 18.32)
+       m =   -0.003523  (-0.005576, -0.00147)
+       w01 =        2858  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2914  (2912, 2916)
+       w04 =        2951  (fixed at bound)
+       w05 =        2970  (2969, 2970)
+gof = 
+           sse: 446.22
+       rsquare: 0.9819
+           dfe: 115
+    adjrsquare: 0.98048
+          rmse: 1.9698
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 3
+    firstorderopt: 6.1943
+       iterations: 67
+        funcCount: 1314
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Bssp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       14.97  (10.62, 19.31)
+       A02 =         104  (101.6, 106.4)
+       A03 =       8.246  (-1.635, 18.13)
+       A04 =       80.37  (75.84, 84.91)
+       A05 =       48.33  (43.38, 53.28)
+       G01 =         8.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       4.661  (4.429, 4.893)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2858  (fixed at bound)
+       w02 =        2881  (2881, 2882)
+       w03 =        2915  (fixed at bound)
+       w04 =        2947  (2946, 2948)
+       w05 =        2966  (2964, 2968)
+gof = 
+           sse: 10041
+       rsquare: 0.98082
+           dfe: 141
+    adjrsquare: 0.97973
+          rmse: 8.4387
+output = 
+           numobs: 150
+         numparam: 17
+        residuals: [150x1 double]
+         Jacobian: [150x17 double]
+         exitflag: 2
+    firstorderopt: 0.00075354
+       iterations: 77
+        funcCount: 1692
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Bssp116----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       31.07  (28.41, 33.74)
+       A02 =       73.88  (70.49, 77.27)
+       A03 =       4.082  (-2.851, 11.02)
+       A04 =       65.38  (62, 68.76)
+       A05 =       28.59  (24.64, 32.54)
+       G01 =         8.5  (fixed at bound)
+       G02 =       6.425  (6.106, 6.744)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       3.871  (3.699, 4.043)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2857  (2857, 2858)
+       w02 =        2882  (2882, 2882)
+       w03 =        2915  (fixed at bound)
+       w04 =        2948  (2948, 2949)
+       w05 =        2965  (2963, 2967)
+gof = 
+           sse: 2119.3
+       rsquare: 0.98718
+           dfe: 114
+    adjrsquare: 0.98605
+          rmse: 4.3116
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 3
+    firstorderopt: 0.00071792
+       iterations: 123
+        funcCount: 2628
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Cppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      0.5529  (-3.207, 4.313)
+       A02 =       5.869  (2.939, 8.799)
+       A03 =       27.94  (23.39, 32.49)
+       A04 =       9.865  (5.692, 14.04)
+       A05 =       79.62  (75.5, 83.73)
+       G01 =         8.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =       8.641  (8.095, 9.186)
+       c =       28.94  (22.48, 35.4)
+       m =   -0.009161  (-0.01142, -0.006904)
+       w01 =        2858  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2915  (fixed at bound)
+       w04 =        2942  (2939, 2946)
+       w05 =        2968  (2967, 2968)
+gof = 
+           sse: 1368.9
+       rsquare: 0.95645
+           dfe: 115
+    adjrsquare: 0.95304
+          rmse: 3.4502
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 3
+    firstorderopt: 0.007278
+       iterations: 137
+        funcCount: 2826
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Cppp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =        1.07  (-1.397, 3.536)
+       A02 =       3.638  (2.032, 5.244)
+       A03 =       13.53  (11.31, 15.74)
+       A04 =       8.326  (6.634, 10.02)
+       A05 =       21.37  (19.91, 22.82)
+       G01 =        10.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =        17.5  (14.67, 20.33)
+       m =   -0.005852  (-0.006833, -0.004871)
+       w01 =        2858  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2915  (fixed at bound)
+       w04 =        2945  (2942, 2947)
+       w05 =        2964  (2963, 2965)
+gof = 
+           sse: 46.465
+       rsquare: 0.75788
+           dfe: 116
+    adjrsquare: 0.74118
+          rmse: 0.6329
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 2
+    firstorderopt: 0.00011251
+       iterations: 78
+        funcCount: 1602
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Cssp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       41.72  (38.89, 44.56)
+       A02 =       80.79  (78.48, 83.11)
+       A03 =       24.45  (20.04, 28.85)
+       A04 =        76.1  (74.44, 77.76)
+       A05 =       3.423  (-0.5027, 7.348)
+       G01 =        10.5  (fixed at bound)
+       G02 =       6.311  (6.101, 6.521)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       35.22  (31.44, 39.01)
+       m =    -0.01165  (-0.01299, -0.01032)
+       w01 =        2857  (2856, 2857)
+       w02 =        2881  (2881, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2943  (2942, 2943)
+       w05 =        2963  (fixed at bound)
+gof = 
+           sse: 1550.6
+       rsquare: 0.99119
+           dfe: 139
+    adjrsquare: 0.99055
+          rmse: 3.34
+output = 
+           numobs: 150
+         numparam: 17
+        residuals: [150x1 double]
+         Jacobian: [150x17 double]
+         exitflag: 3
+    firstorderopt: 0.0059191
+       iterations: 106
+        funcCount: 2304
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Cssp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       36.66  (33.58, 39.75)
+       A02 =       67.73  (64.01, 71.45)
+       A03 =        26.8  (16.41, 37.19)
+       A04 =       56.37  (52.89, 59.85)
+       A05 =       2.862  (-6.746, 12.47)
+       G01 =         8.5  (fixed at bound)
+       G02 =       6.583  (6.213, 6.953)
+       G03 =       10.48  (5.708, 15.26)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       5.839  (-3.036, 14.71)
+       m =   -0.001496  (-0.004625, 0.001633)
+       w01 =        2858  (fixed at bound)
+       w02 =        2881  (2880, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2941  (2940, 2943)
+       w05 =        2973  (fixed at bound)
+gof = 
+           sse: 1611.5
+       rsquare: 0.97967
+           dfe: 114
+    adjrsquare: 0.97789
+          rmse: 3.7598
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 2
+    firstorderopt: 0.10046
+       iterations: 184
+        funcCount: 3798
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Dppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =    -0.05517  (-4.283, 4.173)
+       A02 =      -4.757  (-7.361, -2.154)
+       A03 =       18.91  (14.49, 23.33)
+       A04 =      -15.33  (-19.27, -11.38)
+       A05 =          97  (95.71, 98.28)
+       G01 =         8.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =        4.31  (-2.936, 11.56)
+       m =   -0.000545  (-0.003062, 0.001972)
+       w01 =        2854  (2133, 3575)
+       w02 =        2876  (2873, 2879)
+       w03 =        2912  (2910, 2915)
+       w04 =        2951  (fixed at bound)
+       w05 =        2969  (2969, 2970)
+gof = 
+           sse: 1360.7
+       rsquare: 0.99284
+           dfe: 114
+    adjrsquare: 0.99222
+          rmse: 3.4549
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 0
+    firstorderopt: 3.0952
+       iterations: 1402
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Dppp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       1.001  (-1.21, 3.211)
+       A02 =       2.516  (1.222, 3.81)
+       A03 =        11.7  (9.17, 14.22)
+       A04 =       5.028  (2.298, 7.758)
+       A05 =       35.55  (32.44, 38.66)
+       G01 =         8.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =       8.892  (8.077, 9.707)
+       c =       12.08  (8.675, 15.48)
+       m =   -0.003895  (-0.005081, -0.00271)
+       w01 =        2858  (fixed at bound)
+       w02 =        2884  (fixed at bound)
+       w03 =        2915  (fixed at bound)
+       w04 =        2947  (2944, 2951)
+       w05 =        2967  (2966, 2968)
+gof = 
+           sse: 69.865
+       rsquare: 0.94416
+           dfe: 115
+    adjrsquare: 0.93979
+          rmse: 0.77944
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 0
+    firstorderopt: 0.37374
+       iterations: 1456
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Fitting stopped because the number ...'
+
+_________________________________
+Fit Results for ----beier7Dssp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       22.42  (8.68, 36.16)
+       A02 =       122.8  (118.7, 126.9)
+       A03 =        26.8  (19.46, 34.15)
+       A04 =       105.9  (103.7, 108.1)
+       A05 =       8.714  (0.2235, 17.21)
+       G01 =       10.41  (5.437, 15.38)
+       G02 =        6.22  (6.019, 6.421)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       19.33  (8.702, 29.95)
+       m =   -0.006047  (-0.009751, -0.002342)
+       w01 =        2858  (2856, 2860)
+       w02 =        2880  (2880, 2881)
+       w03 =        2915  (fixed at bound)
+       w04 =        2942  (2942, 2943)
+       w05 =        2963  (fixed at bound)
+gof = 
+           sse: 4697.5
+       rsquare: 0.99445
+           dfe: 113
+    adjrsquare: 0.99391
+          rmse: 6.4476
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 2
+    firstorderopt: 124.66
+       iterations: 503
+        funcCount: 10332
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Dssp111----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       8.808  (6.166, 11.45)
+       A02 =        71.7  (70.24, 73.17)
+       A03 =       3.349  (-2.95, 9.648)
+       A04 =       70.97  (68.66, 73.28)
+       A05 =       17.64  (13.36, 21.91)
+       G01 =         8.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       2.803  (2.654, 2.952)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2858  (fixed at bound)
+       w02 =        2883  (2882, 2883)
+       w03 =        2915  (fixed at bound)
+       w04 =        2946  (2945, 2946)
+       w05 =        2966  (2963, 2969)
+gof = 
+           sse: 1225.6
+       rsquare: 0.9904
+           dfe: 116
+    adjrsquare: 0.98973
+          rmse: 3.2505
+output = 
+           numobs: 125
+         numparam: 17
+        residuals: [125x1 double]
+         Jacobian: [125x17 double]
+         exitflag: 2
+    firstorderopt: 6.5282e-05
+       iterations: 177
+        funcCount: 3780
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Eppp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -3.125  (-6.284, 0.03492)
+       A02 =      -8.145  (-9.905, -6.384)
+       A03 =       23.29  (16.84, 29.75)
+       A04 =      -10.56  (-13.28, -7.835)
+       A05 =       101.5  (100.8, 102.2)
+       G01 =         8.5  (fixed at bound)
+       G02 =         4.6  (fixed at bound)
+       G03 =        11.5  (8.441, 14.56)
+       G04 =         8.5  (fixed at bound)
+       G05 =           7  (fixed at bound)
+       c =       9.289  (3.78, 14.8)
+       m =    -0.00241  (-0.004318, -0.000502)
+       w01 =        2858  (fixed at bound)
+       w02 =        2876  (2875, 2877)
+       w03 =        2912  (2910, 2914)
+       w04 =        2949  (2948, 2951)
+       w05 =        2969  (2969, 2969)
+gof = 
+           sse: 636.88
+       rsquare: 0.99699
+           dfe: 119
+    adjrsquare: 0.99671
+          rmse: 2.3134
+output = 
+           numobs: 131
+         numparam: 17
+        residuals: [131x1 double]
+         Jacobian: [131x17 double]
+         exitflag: 2
+    firstorderopt: 25.237
+       iterations: 149
+        funcCount: 3114
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Eppp116----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =      -1.822  (-3.802, 0.1578)
+       A02 =      -0.603  (-2.321, 1.115)
+       A03 =       5.983  (3.406, 8.559)
+       A04 =       5.134  (2.932, 7.336)
+       A05 =       25.56  (23.42, 27.69)
+       G01 =         8.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =       7.983  (7.256, 8.71)
+       c =       13.85  (9.58, 18.11)
+       m =   -0.004553  (-0.00603, -0.003075)
+       w01 =        2849  (2840, 2858)
+       w02 =        2884  (fixed at bound)
+       w03 =        2915  (fixed at bound)
+       w04 =        2947  (2944, 2949)
+       w05 =        2967  (2966, 2967)
+gof = 
+           sse: 22.729
+       rsquare: 0.94644
+           dfe: 89
+    adjrsquare: 0.94042
+          rmse: 0.50535
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 3
+    firstorderopt: 2.6129e-06
+       iterations: 73
+        funcCount: 1548
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Essp0----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       14.82  (11.16, 18.47)
+       A02 =       187.4  (182.8, 192)
+       A03 =      -51.31  (-59.65, -42.98)
+       A04 =       141.5  (138.5, 144.5)
+       A05 =       33.67  (28.32, 39.02)
+       G01 =         8.5  (fixed at bound)
+       G02 =       6.431  (6.31, 6.552)
+       G03 =        11.5  (fixed at bound)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       4.023  (3.849, 4.198)
+       m =   -2.22e-14  (fixed at bound)
+       w01 =        2858  (fixed at bound)
+       w02 =        2880  (2880, 2880)
+       w03 =        2906  (2901, 2911)
+       w04 =        2945  (2945, 2945)
+       w05 =        2963  (2961, 2965)
+gof = 
+           sse: 8024.2
+       rsquare: 0.9976
+           dfe: 123
+    adjrsquare: 0.9974
+          rmse: 8.077
+output = 
+           numobs: 134
+         numparam: 17
+        residuals: [134x1 double]
+         Jacobian: [134x17 double]
+         exitflag: 3
+    firstorderopt: 0.0038656
+       iterations: 128
+        funcCount: 2610
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Success, but fitting stopped becaus...'
+
+_________________________________
+Fit Results for ----beier7Essp116----
+
+fitresult = 
+     General model:
+     fitresult(x) = abs(m*x+c+A01./(w01-x-1i*G01)+A02./(w02-x-1i*G02)+A03./(w03-
+                    x-1i*G03)+A04./(w04-x-1i*G04)+A05./(w05-x-1i*G05)).^2
+     Coefficients (with 95% confidence bounds):
+       A01 =       28.56  (24.53, 32.59)
+       A02 =       67.51  (63.6, 71.41)
+       A03 =      -23.13  (-43.09, -3.182)
+       A04 =       43.89  (40.13, 47.66)
+       A05 =       17.38  (13.17, 21.59)
+       G01 =        10.5  (fixed at bound)
+       G02 =         6.6  (fixed at bound)
+       G03 =        11.5  (1.649, 21.35)
+       G04 =         8.5  (fixed at bound)
+       G05 =           9  (fixed at bound)
+       c =       2.542  (2.34, 2.743)
+       m =  -2.433e-14  (fixed at bound)
+       w01 =        2858  (fixed at bound)
+       w02 =        2880  (2880, 2880)
+       w03 =        2909  (2901, 2916)
+       w04 =        2947  (2946, 2948)
+       w05 =        2963  (fixed at bound)
+gof = 
+           sse: 664.7
+       rsquare: 0.98716
+           dfe: 90
+    adjrsquare: 0.98587
+          rmse: 2.7176
+output = 
+           numobs: 100
+         numparam: 17
+        residuals: [100x1 double]
+         Jacobian: [100x17 double]
+         exitflag: 0
+    firstorderopt: 0.46275
+       iterations: 1635
+        funcCount: 30006
+     cgiterations: 0
+        algorithm: 'trust-region-reflective'
+          message: 'Fitting stopped because the number ...'
+
+
+Mean value of R squared: 0.977388
+Lowest value of R squared: 0.757876 (beier7Cppp111)
+Logfile created
+Finished at: 16:5:9.275
+--------->Complete<---------
+uiopen('E:\Git\SFG-fit\Export Data\beier5Appp0_fit.csv',1)
+uiopen('E:\Git\SFG-fit\Export Data\beier5Appp0_x.csv',1)
+plot(VarName2,VarName1)
+plot(VarName2,VarName1,'.r')
+SFGfit
+{Index exceeds matrix dimensions.
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_plotSelected', 'E:\Git\SFG-fit\fcn_plotSelected.m', 7)" style="font-weight:bold">fcn_plotSelected</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_plotSelected.m',7,0)">line 7</a>)
+dataName = dataString{dataVal};
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>popup_data_Callback', 'E:\Git\SFG-fit\SFGfit.m', 323)" style="font-weight:bold">SFGfit>popup_data_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',323,0)">line 323</a>)
+fcn_plotSelected(handles)
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_loadDataSet_Callback', 'E:\Git\SFG-fit\SFGfit.m', 102)" style="font-weight:bold">SFGfit>push_loadDataSet_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',102,0)">line 102</a>)
+popup_data_Callback(hObject, eventdata, handles)
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_loadDataSet_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_loadDataSet_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating uicontrol Callback
+
+[Warning: popupmenu control requires that Value be an integer
+within String range
+Control will not be rendered until all of its parameter values
+are valid] 
+[Warning: popupmenu control requires that Value be an integer
+within String range
+Control will not be rendered until all of its parameter values
+are valid] 
+[Warning: popupmenu control requires that Value be an integer
+within String range
+Control will not be rendered until all of its parameter values
+are valid] 
+SFGfit
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\scribe\legend.m',290,1)">legend at 290</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\scr_plotOptions.m',8,1)">scr_plotOptions at 8</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\fcn_plotSelected.m',25,1)">fcn_plotSelected at 25</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',323,1)">SFGfit>popup_data_Callback at 323</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',102,1)">SFGfit>push_loadDataSet_Callback at 102</a>
+  In <a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,1)">gui_mainfcn at 95</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,1)">SFGfit at 42</a>
+  In @(hObject,eventdata)SFGfit('push_loadDataSet_Callback',hObject,eventdata,guidata(hObject))] 

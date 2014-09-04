@@ -1,0 +1,45 @@
+LOGFILE 
+03-Sep-2014 15:42:39 
+____________________________
+Peak positions set to:
+        2968
+Bounds: 10
+Damping coefficients set to:
+     9
+Bounds: 5
+
+_________________________________
+Fit Results for ----beier7Eppp0----
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('fit>iFit', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\fit.m', 309)" style="font-weight:bold">fit>iFit</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\fit.m',309,0)">line 309</a>)
+Too few start points. You need 17 start points for this model.
+Error in <a href="matlab:helpUtils.errorDocCallback('fit', 'D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\fit.m', 108)" style="font-weight:bold">fit</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\curvefit\curvefit\fit.m',108,0)">line 108</a>)
+[fitobj, goodness, output, convmsg] = iFit( xdatain, ydatain,
+fittypeobj, ...
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_createFit', 'E:\Git\SFG-fit\fcn_createFit.m', 109)" style="font-weight:bold">fcn_createFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_createFit.m',109,0)">line 109</a>)
+[fitresult, gof, output] = fit( xData, yData, ft, opts );
+Error in <a href="matlab:helpUtils.errorDocCallback('fcn_batchFit', 'E:\Git\SFG-fit\fcn_batchFit.m', 52)" style="font-weight:bold">fcn_batchFit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\fcn_batchFit.m',52,0)">line 52</a>)
+    [fitresult, gof, output] =
+    fcn_createFit(dataSet.(fldName),handles,options)
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit>push_startFit_Callback', 'E:\Git\SFG-fit\SFGfit.m', 221)" style="font-weight:bold">SFGfit>push_startFit_Callback</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',221,0)">line 221</a>)
+    fitData = fcn_batchFit(handles);
+Error in <a href="matlab:helpUtils.errorDocCallback('gui_mainfcn', 'D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+Error in <a href="matlab:helpUtils.errorDocCallback('SFGfit', 'E:\Git\SFG-fit\SFGfit.m', 42)" style="font-weight:bold">SFGfit</a> (<a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in
+<a href="matlab:helpUtils.errorDocCallback('@(hObject,eventdata)SFGfit(''push_startFit_Callback'',hObject,eventdata,guidata(hObject))', '', 0)" style="font-weight:bold">@(hObject,eventdata)SFGfit('push_startFit_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating uicontrol Callback
+
+SFGfit
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\scribe\legend.m',290,1)">legend at 290</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\scr_plotOptions.m',8,1)">scr_plotOptions at 8</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\fcn_plotSelected.m',25,1)">fcn_plotSelected at 25</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',323,1)">SFGfit>popup_data_Callback at 323</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',102,1)">SFGfit>push_loadDataSet_Callback at 102</a>
+  In <a href="matlab: opentoline('D:\Program Files\MATLAB\R2014a\toolbox\matlab\guide\gui_mainfcn.m',95,1)">gui_mainfcn at 95</a>
+  In <a href="matlab: opentoline('E:\Git\SFG-fit\SFGfit.m',42,1)">SFGfit at 42</a>
+  In @(hObject,eventdata)SFGfit('push_loadDataSet_Callback',hObject,eventdata,guidata(hObject))] 
