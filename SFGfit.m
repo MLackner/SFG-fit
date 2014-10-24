@@ -22,7 +22,7 @@ function varargout = SFGfit(varargin)
 
 % Edit the above text to modify the response to help SFGfit
 
-% Last Modified by GUIDE v2.5 24-Oct-2014 15:19:09
+% Last Modified by GUIDE v2.5 24-Oct-2014 20:55:35
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -97,23 +97,6 @@ function file = push_loadDataSet_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-[file,fileName] = fcn_loadFile('*.mat','Select Data Set');
-% Store Data
-h = handles.figure1;
-fileFldName = fieldnames(file);
-dataSet = file.(fileFldName{1});
-setappdata(h,'dataSet',dataSet)
-setappdata(h,'fileName',fileName)
-% Change data name
-set(handles.text_dataSet,'String',fileName);
-% Write Data Names in popup menu
-dataNames = cell(1,length(dataSet));
-for i=1:length(dataSet)
-    dataNames{i} = dataSet(i).name;
-end
-set(handles.popup_data,'String',dataNames)
-%
-popup_data_Callback(hObject, eventdata, handles)
 
 function edit_numPeaks_Callback(hObject, eventdata, handles)
 % hObject    handle to edit_numPeaks (see GCBO)
@@ -239,38 +222,6 @@ function push_startFit_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Change to busy status
-axes(handles.axes_status);
-imshow('icons\busy.gif')
-% Start Log
-if get(handles.check_logFile,'Value') == 1
-    fcn_logFile(1)
-end
-% Start Fitting
-if get(handles.check_runOptim,'Value') == 1
-    while get(handles.check_runOptim,'Value') == 1
-        dataSet = fcn_batchFit(handles);
-    end
-else
-    dataSet = fcn_batchFit(handles);
-end
-% End Log
-if get(handles.check_logFile,'Value') == 1
-    fcn_logFile(0)
-end
-% Send fitData to workspace
-assignin('base','prData',dataSet);
-% Store Fit Data
-h = handles.figure1;
-setappdata(h,'dataSet',dataSet)
-% Change text to processed Data
-set(handles.text_dataSet,'String',['processed (',...
-    getappdata(h,'fileName'),')'])
-% Change to ready status
-axes(handles.axes_status);
-imshow('icons\ready.gif')
-
-
 
 function edit_dw_Callback(hObject, eventdata, handles)
 % hObject    handle to edit_dw (see GCBO)
@@ -323,20 +274,6 @@ function push_loadModel_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-[file,fileName] = fcn_loadFile('*.txt','Open Fit Model');
-% Get file id
-fileID = fopen(file);
-% Scan the text file
-modelStringCell = textscan(fileID,'%s');
-modelString = modelStringCell{1};
-% Close file
-fclose(fileID);
-% Store Data
-h = handles.figure1;
-setappdata(h,'fitModel',modelString)
-% Change data name
-set(handles.text_model,'String',fileName);
-
 
 % --- Executes during object creation, after setting all properties.
 function axes_status_CreateFcn(hObject, eventdata, handles)
@@ -383,6 +320,104 @@ function check_runOptim_Callback(hObject, eventdata, handles)
 % --- Executes on button press in push_showResults.
 function push_showResults_Callback(hObject, eventdata, handles)
 % hObject    handle to push_showResults (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function uipush_startFit_ClickedCallback(hObject, eventdata, handles)
+% hObject    handle to uipush_startFit (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Change to busy status
+axes(handles.axes_status);
+imshow('icons\busy.gif')
+% Start Log
+if get(handles.check_logFile,'Value') == 1
+    fcn_logFile(1)
+end
+% Start Fitting
+if get(handles.check_runOptim,'Value') == 1
+    while get(handles.check_runOptim,'Value') == 1
+        dataSet = fcn_batchFit(handles);
+    end
+else
+    dataSet = fcn_batchFit(handles);
+end
+% End Log
+if get(handles.check_logFile,'Value') == 1
+    fcn_logFile(0)
+end
+% Store Fit Data
+h = handles.figure1;
+setappdata(h,'dataSet',dataSet)
+% Change text to processed Data
+set(handles.text_dataSet,'String',['processed (',...
+    getappdata(h,'fileName'),')'])
+% Change to ready status
+axes(handles.axes_status);
+imshow('icons\ready.gif')
+
+
+% --------------------------------------------------------------------
+function uipush_loadData_ClickedCallback(hObject, eventdata, handles)
+% hObject    handle to uipush_loadData (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+[file,fileName] = fcn_loadFile('*.mat','Select Data Set');
+% Store Data
+h = handles.figure1;
+fileFldName = fieldnames(file);
+dataSet = file.(fileFldName{1});
+setappdata(h,'dataSet',dataSet)
+setappdata(h,'fileName',fileName)
+% Change data name
+set(handles.text_dataSet,'String',fileName);
+% Write Data Names in popup menu
+dataNames = cell(1,length(dataSet));
+for i=1:length(dataSet)
+    dataNames{i} = dataSet(i).name;
+end
+set(handles.popup_data,'String',dataNames)
+%
+popup_data_Callback(hObject, eventdata, handles)
+
+
+% --------------------------------------------------------------------
+function uipush_loadFitmodel_ClickedCallback(hObject, eventdata, handles)
+% hObject    handle to uipush_loadFitmodel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+[file,fileName] = fcn_loadFile('*.txt','Open Fit Model');
+% Get file id
+fileID = fopen(file);
+% Scan the text file
+modelStringCell = textscan(fileID,'%s');
+modelString = modelStringCell{1};
+% Close file
+fclose(fileID);
+% Store Data
+h = handles.figure1;
+setappdata(h,'fitModel',modelString)
+% Change data name
+set(handles.text_model,'String',fileName);
+
+
+% --------------------------------------------------------------------
+function uipush_saveData_ClickedCallback(hObject, eventdata, handles)
+% hObject    handle to uipush_saveData (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+fcn_saveData(handles)
+
+
+% --------------------------------------------------------------------
+function uipush_showFitResults_ClickedCallback(hObject, eventdata, handles)
+% hObject    handle to uipush_showFitResults (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
