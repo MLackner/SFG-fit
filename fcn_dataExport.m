@@ -8,7 +8,7 @@ filetype = '.csv';
 %% Make dir if doesn't exist
 folderCheck = exist(pathname,'dir');
 if folderCheck ~= 7
-    makedir(filepath)
+    mkdir(pathname)
 end
 
 %% Export x,y data

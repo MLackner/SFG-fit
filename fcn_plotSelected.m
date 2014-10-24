@@ -9,16 +9,16 @@ dataName = dataString{dataVal};
 h = handles.figure1;
 dataSet = getappdata(h,'dataSet');
 % Define Data
-xData = dataSet.(dataName).wn;
-yData = dataSet.(dataName).signal;
+xData = dataSet(dataVal).wavenumber;
+yData = dataSet(dataVal).signal;
 % Plot
 axes(handles.axes_prev)
-plot(xData,yData,'.b')
+plot(xData,yData,'.')
 % Plot fitdata if available
-if isfield(dataSet.(dataName),'fit')
+if isfield(dataSet(dataVal),'fit')
     hold on
-    fit = dataSet.(dataName).fit;
-    plot(fit,'-r')
+    fit = dataSet(dataVal).fit;
+    plot(fit,'-')
     hold off
 end
 % Options

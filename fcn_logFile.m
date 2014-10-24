@@ -20,7 +20,7 @@ if onoff == 1
     %% Make dir if doesn't exist
     folderCheck = exist(filepath,'dir');
     if folderCheck ~= 7
-        makedir(filepath)
+        mkdir(filepath)
     end
     
     %% Diary on

@@ -1,4 +1,4 @@
-function fitData = fcn_batchFit(handles)
+function dataSet = fcn_batchFit(handles)
 
 
 %% Get data Set
@@ -6,9 +6,10 @@ h = handles.figure1;
 dataSet = getappdata(h,'dataSet');
 
 %% Get a list of all the variable names (strings)
-dataNames = fieldnames(dataSet);
-
-
+dataNames = cell(1,length(dataSet));
+for i=1:length(dataSet)
+    dataNames{i} = dataSet(i).name;
+end
 
 %% Set Peak positions and damp coefficients in case of optimJob
 if get(handles.check_runOptim,'Value') == 1
@@ -42,6 +43,10 @@ fprintf('Bounds: %g\n',options.dG)
 
 %% Fit Model
 fitModel = getappdata(h,'fitModel');
+if isempty(fitModel)
+    errordlg('No fit model selected.')
+    return
+end
 fitModel = fitModel{1};
 options.ft = fittype(fitModel,'independent', 'x', 'dependent', 'y' );
 
@@ -49,13 +54,13 @@ options.ft = fittype(fitModel,'independent', 'x', 'dependent', 'y' );
 rsquared = zeros(1,length(dataNames));          %rsquared
 
 % Make a fit for every data set in file
-for i=1:length(dataNames)
+for i=1:length(dataSet)
     fldName = dataNames{i};
     options.name = dataNames{i};
     % Output
     fprintf('\n_________________________________\n')
     fprintf('Fit Results for ----%s----\n\n',options.name)
-    [fitresult, gof, output] = fcn_createFit(dataSet.(fldName),handles,options)
+    [fitresult, gof, output] = fcn_createFit(dataSet(i),handles,options)
     coeffVals = coeffvalues(fitresult);
     coeffNames = coeffnames(fitresult);
     coeffNum = numcoeffs(fitresult);
@@ -64,14 +69,8 @@ for i=1:length(dataNames)
     % Collect GOF data
     rsquared(i) = gof.rsquare;                  % rsquared
     
-    %% Duplicate raw data
-    rawdata = fieldnames(dataSet.(fldName));
-    for j=1:numel(rawdata)
-        fitData.(fldName).(rawdata{j}) = dataSet.(fldName).(rawdata{j});
-    end
-    
     %% Write fit result in structure
-    fitData.(fldName).fit = fitresult;
+    dataSet(i).fit = fitresult;
     
     %% Update Popup Menu entry
     set(handles.popup_data,'Value',i)
@@ -116,6 +115,11 @@ if get(handles.check_dataTable,'Value') == 1
     filename2 = fcn_gendatename();
     tableType = '.mat';
     tableFileName = [tablePath,tableName1,filename2,tableType];
+    %% Make dir if doesn't exist
+    folderCheck = exist(tablePath,'dir');
+    if folderCheck ~= 7
+        mkdir(tablePath)
+    end
     save(tableFileName,'fitDataTable');
 end
 

@@ -22,7 +22,7 @@ function varargout = SFGfit(varargin)
 
 % Edit the above text to modify the response to help SFGfit
 
-% Last Modified by GUIDE v2.5 04-Sep-2014 18:35:26
+% Last Modified by GUIDE v2.5 24-Oct-2014 15:19:09
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -107,7 +107,10 @@ setappdata(h,'fileName',fileName)
 % Change data name
 set(handles.text_dataSet,'String',fileName);
 % Write Data Names in popup menu
-dataNames = fieldnames(dataSet);
+dataNames = cell(1,length(dataSet));
+for i=1:length(dataSet)
+    dataNames{i} = dataSet(i).name;
+end
 set(handles.popup_data,'String',dataNames)
 %
 popup_data_Callback(hObject, eventdata, handles)
@@ -246,20 +249,20 @@ end
 % Start Fitting
 if get(handles.check_runOptim,'Value') == 1
     while get(handles.check_runOptim,'Value') == 1
-        fitData = fcn_batchFit(handles);
+        dataSet = fcn_batchFit(handles);
     end
 else
-    fitData = fcn_batchFit(handles);
+    dataSet = fcn_batchFit(handles);
 end
 % End Log
 if get(handles.check_logFile,'Value') == 1
     fcn_logFile(0)
 end
 % Send fitData to workspace
-assignin('base','prData',fitData);
+assignin('base','prData',dataSet);
 % Store Fit Data
 h = handles.figure1;
-setappdata(h,'dataSet',fitData)
+setappdata(h,'dataSet',dataSet)
 % Change text to processed Data
 set(handles.text_dataSet,'String',['processed (',...
     getappdata(h,'fileName'),')'])

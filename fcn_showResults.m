@@ -15,11 +15,12 @@ dataSetFldNames = fieldnames(dataSet);
 % Get fieldname of selected data
 dataFldName = dataSetFldNames{dataVal};
 % Check if fit data is available
-if isfield(dataSet.(dataFldName),'fit') == 0
+if isfield(dataSet(dataVal),'fit') == 0
+    errordlg('No fit results available.')
     return
 end
 % Get fit data object
-fitData = dataSet.(dataFldName).fit;
+fitData = dataSet(dataVal).fit;
 
 %% Create an info string
 % Get coeffnames
